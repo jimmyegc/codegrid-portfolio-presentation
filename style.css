@@ -106,7 +106,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 10vw;
-  will-change: gap;  
+  will-change: gap;    
 }
 
 .hero-images .img {
@@ -115,7 +115,14 @@ nav {
   transform: translateY(50%) scale(0.5);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   opacity: 0;
-  will-change: opacity, transform, clip-path;
+  will-change: opacity, transform, clip-path; 
+  border-radius: 14px;
+  overflow: hidden;  
+}
+
+.hero-img img {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .hero-header {
@@ -156,6 +163,6 @@ nav {
   }
 
   .hero-images .img {
-    width: 20vw;
+    width: 20vw;    
   }
 }
